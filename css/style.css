@@ -1,0 +1,237 @@
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ 
+}
+/*COLOR Y TEXTO DEL TITULO*/
+h1{
+    background-color: rgb(78, 78, 78);
+    text-align: center;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*ESTILO DEL MENU NAVEGADOR*/
+
+.menu-nav{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*MI ESTILO DE LA PAGINA PRINCIPAL*/
+
+/*Estilo de main*/
+.containerimg{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   width: 70%;
+   margin: 5px;
+   box-sizing: border-box;
+   
+}
+.container-img{
+   text-align: center;
+   
+}
+.container-imguno{
+    text-align: center;
+    
+    
+}
+/*ESTILO H3*/
+h3{
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+/*mq de tablet*/
+@media screen and (min-width: 600px){
+.container-imguno{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: space-around;
+    justify-content: center;
+    
+}
+.container-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: space-around;
+    justify-content: center;
+}
+.img-uno{
+    grid-area: img-uno;
+}
+.img-dos{
+    grid-area: img-dos;
+}
+.img-tres{
+    grid-area: img-tres;
+}
+.img-cuatro{
+    grid-area: img-cuatro;
+}
+.img-cinco{
+    grid-area: cinco;
+}
+.img-seis{
+    grid-area: img-seis;}
+}
+/* mq de desktop */
+
+@media screen and (min-width:1024px){
+.container-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    display: grid;
+    justify-content: center;
+    align-items: space-around;
+
+}
+}
+/*MI ESTILO DE PAG HOMBRES*/
+
+.main.div.hombreimg{
+    
+   display: flex;
+   justify-content: center;
+   align-items: space-around;
+   width: 100%;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+
+/* MQ DE TABLET pagina de hombres*/
+
+@media screen and (min-width:600px){
+.main.div.hombreimg{  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    gap: 20px;
+}
+}
+/*MI ESTILO PAGINA DE REGISTRO */
+
+.registro{
+    width: 70%;
+    background-color: rgb(78, 78, 78);
+    padding: 20px;
+    border-radius: 6px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    margin: 10% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titleregistro{
+    font-size: 26px;
+    margin-bottom: 15px;
+    background-color: rgb(78, 78, 78);
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+    color: rgb(26, 26, 36);
+    text-align: center;
+}
+
+.registropag{
+    background-color: rgb(211, 211, 214);
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    border: 2px solid #000000;
+}
+
+.Condiciones{
+    background-color: rgb(78, 78, 78);  
+}
+
+.boton{
+    background-color: rgb(211, 211, 214);
+    justify-items: center;
+    border-bottom: black;
+}
+
+/*MI ESTILO DE CONTACTO*/
+
+.contactarse{
+    background-image: url(../img/imagendecontacto.jpg);
+    background-size: 100vw 100vh; 
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(38, 39, 39); 
+}
+form{
+    margin: auto;
+    background-color: #3b3b3b;
+    padding: 20px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    height: 80%;  
+}
+
+input{
+    width: 100%;
+    padding: 20px;
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+/* mq contacto*/
+/* @media screen and (min-width 600px) */ 
+    
+
+
+/*MI ESTILO DE QUIENES SOMOS*/
+
+.nosotros{
+    
+    
+    background-color: rgb(235, 156, 142);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #272727;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.nosotroshijo{
+    width: 100%;
+}
+
+/*MI ESTILO DE FOOTER*/
+
+.footer{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
